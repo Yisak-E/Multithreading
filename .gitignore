@@ -17,3 +17,5 @@ cmake-build-minsize
 *.user
 *.sln
 *.vcxproj
+
+LargeFile
