@@ -3,4 +3,4 @@ project(Multithreading C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Multithreading main.c)
+add_executable(Multithreading main.c folder1.c folder2.c folder3.c)
