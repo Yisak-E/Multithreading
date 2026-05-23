@@ -1,6 +1,15 @@
-cmake_minimum_required(VERSION 4.2)
+cmake_minimum_required(VERSION 3.26)
 project(Multithreading C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Multithreading main.c folder1.c folder2.c folder3.c)
+find_package(OpenMP REQUIRED)
+
+add_executable(Multithreading
+        main.c
+        fold1_program.c
+        fold2_program.c
+        fold3_program.c
+)
+
+target_link_libraries(Multithreading PUBLIC OpenMP::OpenMP_C)
